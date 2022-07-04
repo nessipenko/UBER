@@ -9,6 +9,9 @@ nav
   background: #212121
   z-index: 5
 
+a
+    text-decoration: none
+
 .hamburger
     display: none
 
@@ -25,6 +28,7 @@ nav
         text-decoration: none
         &:hover
             text-decoration: underline
+            color: #ffffff
     &_item
         border-right: 2px dotted black
         padding-right: 40px
@@ -32,8 +36,8 @@ nav
             border-right: none
 
 .subheader
-    margin-top: 50px
     position: absolute
+    top: 50px
     width: 100%
     height: 84px
     background-color: rgba(0, 0, 0, 0.6)
@@ -43,10 +47,10 @@ nav
         margin-top: 16px
     &_official
         margin-top: 4px
-        opacity: 0.5;
-        font-size: 13px;
-        font-weight: 100;
-        color: #ffffff;
+        opacity: 0.5
+        font-size: 13px
+        font-weight: 100
+        color: #ffffff
     &_partner
         margin-top: 6px
         opacity: 0.5
@@ -270,29 +274,29 @@ nav
                      background-color: $second-color
 
 .choice 
-	position: relative
-	min-height: 895px
-	padding: 57px 0 138px 0
-	background: url('../img/mobile_bg.jpg') center (center / cover) no-repeat
-	&_img 
-		position: relative
-		display: block
-		margin: 56px auto 0 auto
-		z-index: 2
-	&_descr 
-		text-align: center
-		color: #222222
-		font-size: 17px
-		font-weight: 300
-		line-height: 24px
-	.black 
-		position: absolute 
-		top: 0
-		left: 0
-		height: 499px
-		width: 100%
-		background-color: #070716
-		z-index: 1
+    position: relative
+    min-height: 895px
+    padding: 57px 0 138px 0
+    background: url('../img/mobile_bg.jpg') center (center / cover) no-repeat
+    &_img 
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr 
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+    .black 
+        position: absolute 
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
             
                
 .require
@@ -337,14 +341,15 @@ nav
                      background: url(../icons/tick_red.svg) center (center / cover) no-repeat
 .world
     position: relative
-    padding: 50px 0
-    background: url(../img/map.jpg)
+    padding: 49px 0
+    background: url(../img/map.jpg) center (center / cover) no-repeat
     min-height: 717px
     &_link
         position: absolute
         left: 50%
         transform: translateX(-50%)
         bottom: 49px
+        text-align: center
         font-size: 15px
         line-height: 68px
         font-weight: 400
@@ -357,75 +362,72 @@ nav
 
 
 footer 
-    padding: 11px 21px 10px 23px
-    a
-        text-decoration: none 
-        &:hover
+    padding: 14px 23px 39px 23px
+    a 
+        &:hover 
             text-decoration: none
 .footer
     &_divider
         width: 299px
         height: 4px
-        background-color: #1fbad6
+        background-color: $main-color
         margin: 0 auto
     &_wrapper
-        display: flex
+        display: flex 
         justify-content: space-between
         align-items: flex-start
         padding-top: 32px
-    &_wrapper > div
+    &_wrapper > div 
         width: 33%
         &:nth-child(3)
-            display: flex
+            display: flex 
             justify-content: flex-end
     &_social
         width: 160px
         display: flex
         justify-content: space-between
-        &_item
-            display: flex
+        &_item 
+            display: flex 
             justify-content: center
             align-items: center
-            margin: 0 4px
+            margin: 0 4px 
             width: 32px
             height: 32px
             background-color: #070716
             border-radius: 100%
             span
-                color: white
+                color: #fff
+            i 
+                color: #fff
     &_links
         width: 390px
         margin: 0 auto
-        &_main
-            display: flex
+        &_main 
+            display: flex 
             justify-content: space-between
-            padding: 0px 10px
-            a
+            padding: 0 10px
+            a 
+                color: #070716
                 font-size: 15px
                 font-weight: 300
                 text-transform: uppercase
-                color: #070716
-        &_sub
-            display: flex
+        &_sub 
+            display: flex 
             justify-content: space-between
             margin-top: 10px
-            a
+            a 
+                color: #999999
                 font-size: 11px
                 font-weight: 300
                 text-transform: uppercase
-                color: #999999
-        &_lang
-            display: block
+        &_lang 
+            display: block 
             margin: 0 auto
-            text-align: center
-            margin-top: 20px
+            color: #1fbad6
             font-size: 11px
             font-weight: 400
+            margin-top: 19px
             text-transform: uppercase
-            color: $main-color
-    &_mobiles
-        display: block
-        justify-content: center
-        align-items: center
+            text-align: center
 .xs-visible
         display: none
